@@ -9,24 +9,24 @@
 
 {% block content %}
 
-<h3>Django Google API Course - Sign In</h3>
+<h3>Войти в учетную запись</h3>
 
 <div class="container">
 
   <form id="signinform" method="POST" action="/sign-in">
     {% csrf_token %}
-    <label for="username">Username</label>
+    <label for="username">Имя пользователя</label>
     {{form.username}}
 
-    <label for="password">Password</label>
+    <label for="password">Пароль</label>
     {{form.password}}
 
-    <label class="check-container">Show Passwords
+    <label class="check-container">Показать пароль
      <input type="checkbox" onclick="showPword()">
      <span class="checkmark"></span>
    </label>
 
-   <button type="submit">Sign in</button>
+   <button type="submit">Вход</button>
  </form>
 
 </div>

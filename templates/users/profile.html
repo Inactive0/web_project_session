@@ -9,20 +9,20 @@
 
 {% block content %}
 
-<h3>Django Google API Course - User Profile</h3>
+<h3>Профиль пользователя</h3>
 
 <div class="container">
   {% if request.user.userprofile.has_profile %}
   <table>
     <thead>
       <tr>
-        <th>Field</th>
+        <th>Поле данных</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Address</td>
+        <td>Адрес</td>
         <td>
           <address>
             {{request.user.userprofile.address}}<br>
@@ -35,9 +35,9 @@
     </tbody>
   </table>
   </br>
-  <label for="id-google-address">Change Address</label>
+  <label for="id-google-address">Изменить Адрес</label>
   {% else %}
-  <label for="id-google-address">Add Address</label>
+  <label for="id-google-address">Добавить адрес</label>
   {% endif %}
 
   <input type="text" placeholder="*Begin typing address" id="id-google-address" name="google_address">
@@ -45,29 +45,29 @@
   <form id="profileform" method="POST" action="/profile">
     {% csrf_token %}
 
-   <label for="address" class="hidden-el" hidden>Address</label>
+   <label for="address" class="hidden-el" hidden>Адрес</label>
    {{form.address}}
 
-   <label for="town" class="hidden-el" hidden>Town/City</label>
+   <label for="town" class="hidden-el" hidden>Пригород/Город</label>
    {{form.town}}
 
-   <label for="county" class="hidden-el" hidden>County</label>
+   <label for="county" class="hidden-el" hidden>Округ</label>
    {{form.county}}
 
-   <label for="post_code" class="hidden-el" hidden>Postal Code</label>
+   <label for="post_code" class="hidden-el" hidden>Почтовый индекс</label>
    {{form.post_code}}
 
-   <label for="country" class="hidden-el" hidden>Country</label>
+   <label for="country" class="hidden-el" hidden>Страна</label>
    {{form.country}}
 
-   <label for="post_code" class="hidden-el" hidden>Longitude</label>
+   <label for="post_code" class="hidden-el" hidden>Долгота</label>
    {{form.longitude}}
 
-   <label for="country"  class="hidden-el" hidden>Latitude</label>
+   <label for="country"  class="hidden-el" hidden>Широта</label>
    {{form.latitude}}
 
 
-   <button disabled type="submit" id="profile-btn">Update</button>
+   <button disabled type="submit" id="profile-btn">Сохранить</button>
  </form>
 
 </div>

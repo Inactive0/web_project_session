@@ -39,12 +39,12 @@ ul.sidenav li a {
 }
 
 ul.sidenav li a.active {
-  background-color: #636067;
+  background-color: #7893d9;
   color: white;
 }
 
 ul.sidenav li a:hover:not(.active) {
-  background-color: #555;
+  background-color: #7893d9;
   color: white;
 }
 
@@ -90,28 +90,28 @@ input[type=text], input[type=email], input[type=password], select, textarea {
 
 
 ::-webkit-input-placeholder { /* Edge */
-  color: #5a5a5b;
+  color: #7893d9;
   font-family: 'Courier Prime', monospace;
 }
 
 :-ms-input-placeholder { /* Internet Explorer */
-  color: #5a5a5b;
+  color: #7893d9;
   font-family: 'Courier Prime', monospace;
 }
 
 ::placeholder {
-  color: #5a5a5b;
+  color: #7893d9;
   font-family: 'Courier Prime', monospace;
 }
 
 select.selection option
 {
-  color: #5a5a5b;
+  color: #7893d9;
   font-family: 'Courier Prime', monospace;
 }
 
 input, select{
-  color: #5a5a5b;
+  color: #7893d9;
   font-family: 'Courier Prime', monospace;
 
 }
@@ -155,7 +155,7 @@ input, select{
 
 /* When the checkbox is checked, add a green background */
 .check-container input:checked ~ .checkmark {
-  background-color: #5a5a5b;
+  background-color: #7893d9;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -223,11 +223,11 @@ input, select{
 }
 
 input:checked + .slider {
-  background-color: #5a5a5b;
+  background-color: #7893d9;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #5a5a5b;
+  box-shadow: 0 0 1px #7893d9;
 }
 
 input:checked + .slider:before {
@@ -246,7 +246,7 @@ input:checked + .slider:before {
 }
 
 button[type=submit] {
-  background-color: #a1a0a0;
+  background-color: #4c4c93;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -281,12 +281,12 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #5a5a5b;
+  background-color: #7893d9;
   color: white;
 }
 
 .selected {
-  background-color: #5a5a5b;
+  background-color: #7893d9;
   color: #FFF;
 }
 

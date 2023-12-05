@@ -10,36 +10,36 @@
 
 {% block content %}
 
-<h3 id="map">Django Google API Course - Map</h3>
+<h3 id="map">Карта</h3>
 
 <div class="container">
 
   <table>
     <thead>
       <tr>
-        <th>Field</th>
+        <th>Поле данных</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Start</td>
+        <td>Начало</td>
         <td>{{directions.origin}}</td>      
       </tr>
       <tr>
-        <td>Destination</td>
+        <td>Место назначения</td>
         <td>{{directions.destination}}</td>      
       </tr>
       <tr>
-        <td>Duration</td>
+        <td>Время</td>
         <td>{{directions.duration}}</td>      
       </tr>
       <tr>
-        <td>Distance</td>
+        <td>Расстояние</td>
         <td>{{directions.distance}}</td>      
       </tr>
       <tr>
-        <td>Directions</td>
+        <td>Направления</td>
         <td id="dir-toggle">click <a href="javascript:void(0)" onclick="DirectionsToggle()">here</a></td>      
       </tr>
 
@@ -49,9 +49,9 @@
   <table id="dir-table" hidden>
     <thead>
       <tr>
-        <th>Directions</th>
-        <th>Distance</th>
-        <th>Duration</th>
+        <th>Направления</th>
+        <th>Расстояние</th>
+        <th>Продолжительность</th>
       </tr>
     </thead>
     <tbody>
