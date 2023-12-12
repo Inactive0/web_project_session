@@ -1,12 +1,10 @@
 # web_project_session
-Django project that uses Googles APIs to auto populate fields, display maps and routes for multiple waypoints
-
-1) cd to development directory
+1) перейдите в каталог разработки
 2) mkvirtualenv web_project_session
 3) mkdir web_project_session
-4) clone repository to new directory
-5) pip install -r requirements.txt
-6) Create and update settings.ini with your email API information
+4) клонировать репозиторий в новый каталог
+5) pip install -r требования.txt
+6) Создайте и обновите файл settings.ini, указав информацию об API вашей электронной почты.
 
 GOOGLE_API_KEY = ""
 
@@ -14,20 +12,9 @@ RECAPTCHA_PUBLIC_KEY = ""
 
 RECAPTCHA_PRIVATE_KEY = ""
 
-7) python manage.py makemigrations
-8) python manage.py migrate
-9) python manage.py runserver
-10) https://localhost:8000 - Bob's your uncle!! 
-
-Note: 
-
-Don't forget to activate the following Google API's
-
-reCAPTURE
-Places API
-Maps Javascript API
-Directions API
-Distance Matrix API
-Geocoding API
+7) Python Manage.py makemigrations
+8) миграция python Manage.py
+9) сервер запуска Python Manage.py
+10) https://локальный хост:8000
 
 
